@@ -1,101 +1,57 @@
-/*
-*/
-/* 
+    /* 
     Created on : 2016-10-30, 13:10:47
     Author     : Wojciech Puzio
-*/
+    */
+    body {
+        padding-top: 50px;
+        position: relative;
+    }
 
-@-webkit-keyframes backgroundScroll {
-    from {background-position: 0 0;}
-    to {background-position: -400px 0;}
-}
+    #header {
+        background: transparent url("./image/header.png") no-repeat;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center; 
+    }
 
-@keyframes backgroundScroll {
-    from {background-position: 0 0;}
-    to {background-position: -400px 0;}
-}
+    .starter {
+        min-height:95vh;
+        padding-top: 60px;
+        padding-bottom: 15px;
+        text-align: center;
+    }
 
-*, *:before, *:after { 
-    -webkit-box-sizing:border-box; 
-    -moz-box-sizing:border-box; 
-    box-sizing:border-box;
-}
+    .ramka {
+        background-color: rgba(0, 0, 0, 0.8); 
+        border-color: #333;
+        margin-top: 20px;
+    }
 
-body {
-    background: url("http://lorempixel.com/1366/768/city/") no-repeat center center fixed; 
-    -webkit-animation: backgroundScroll 35s linear infinite;
-    animation: backgroundScroll 15s linear infinite;
-    background-size:130% 100%;
-    background-position:top;
-    background-attachment:fixed;
-}
+    #text {
+        background: transparent url("./image/offer.png") no-repeat;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;  
+    }   
 
-nav { 
-    position: fixed; 
-    height: 100vh; 
-    width: 4rem; 
-    background: #555; 
-    overflow: hidden;
-    z-index: 1;
-}
+    .ramka2 {
+        background-color: rgba(0, 0, 0, 0.8); 
+        border-color: #333;
+        margin-top: 20px;
+    } 
 
-#logo {
-    width: 10rem;
-    line-height: 4rem;
-    background:#ff6600;
-    padding-left:.7rem;
-}
+    .offer {
+        min-height: 50vh;
+    }
 
-a label { 
-    display: table-cell;
-    text-align: left;
-}
+    #footer {
+        background: transparent url("./image/footer.png") no-repeat;
+        background-repeat: no-repeat;
+        background-position: center; 
+        text-align: center; 
+        min-height: 100vh;
+    }
 
-.label {
-
-}
-
-nav:hover {
-    width: 10rem;
-}
-
-nav a{
-    width: 10rem;
-    display: table;
-    text-decoration: none;
-    color: #fff;
-}
-
-nav a:hover {
-    width: 10rem;
-    color: #BEE0ff;
-    background:#444;
-    text-decoration: none;
-}
-
-nav a i {
-    width: 4rem;
-    height: 4rem;
-    padding: 1rem 0rem 0rem 1rem;
-}
-
-.current{
-    border-left: 3px solid #f60;
-}
-
-section {
-    padding: 0rem 0rem 0rem 9rem;
-    min-height: 500px;
-    width: 100vw;
-    background: rgba(0000,0000,0000, 0.5);
-}
-
-.carousel-caption {
-    width: 15rem;
-    height: 100rem;
-    top: 0;
-    right: 0;
-    left: initial;
-    background: rgba(0000,0000,0000, 0.7);
-    
-}
+    .foo {
+        padding-top: 5vh;
+    }
